@@ -42,6 +42,8 @@
                 </select>
             	<button onclick="fuck()">fuck</button>
                 <button onclick="shit()">shit</button>
+                <button onclick="both()">both</button>
+                <button onclick="censor()">censor</button>
             </td>
        	</tr>
       	<tr>
@@ -51,6 +53,10 @@
         </tr>
     </table>
   <script type="text/javascript">
+   function both()
+   {
+   		fuck(); shit();
+   }
    function fuck()
     {
     	document.getElementById("fuck").innerHTML +=
@@ -64,6 +70,12 @@
         "<span style = '" +
         document.getElementById("fuckSelector").value + 
         "'> shit</span>";
+    }
+    function censor()
+    {
+    	document.getElementById("fuck").innerHTML = 
+        document.getElementById("fuck").innerHTML
+        .replace(/fuck/g, "phooey").replace(/shit/g,"shoot");
     }
   </script>
   </body>
