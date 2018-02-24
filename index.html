@@ -18,29 +18,30 @@
     	<tr>
         	<td>
                 <select id="fuckSelector">
-                  <option value="">one fuck</option>
+                  <option value="">one</option>
                   <option value="text-shadow: 5px 5px;">
-                  	two fucks</option>
-                  <option value="color:red;">red fuck</option>
-                  <option value="color:blue;">blue fuck</option>
+                  	two</option>
+                  <option value="color:red;">red</option>
+                  <option value="color:blue;">blue</option>
                   <option value="text-decoration: line-through;">
-                      crossed fuck</option>
+                      crossed</option>
                   <option value="text-transform: uppercase;">
-                    capital fuck</option>
+                    capital</option>
                   <option value="font-size: 200%">
-                      big fuck</option>
+                      big</option>
                   <option value="font-size: 50%">
-                      little fuck</option>
+                      little</option>
                   <option value="font-size: 300%">
-                      huge fuck</option>
+                      huge</option>
                   <option value="letter-spacing: 5px">
-                      wide fuck</option>
+                      wide</option>
                   <option value="font-weight: bold;">
-                      bold fuck</option>
+                      bold</option>
                   <option value="font-style: italic;">
-                      suspicious fuck</option>
+                      suspicious</option>
                 </select>
-            	<button onclick="fuck()">enter</button>
+            	<button onclick="fuck()">fuck</button>
+                <button onclick="shit()">shit</button>
             </td>
        	</tr>
       	<tr>
@@ -56,6 +57,13 @@
         "<span style = '" +
         document.getElementById("fuckSelector").value + 
         "'> fuck</span>";
+    }
+    function shit()
+    {
+    	document.getElementById("fuck").innerHTML +=
+        "<span style = '" +
+        document.getElementById("fuckSelector").value + 
+        "'> shit</span>";
     }
   </script>
   </body>
